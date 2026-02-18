@@ -6,7 +6,7 @@ The project simulates a four way intersection. The system uses three distinct ha
 * **Synchronyzed State Machine:** Manages three distinct phases for Traffic light A and Traffic light B, ensuring that intersecting traffic never has a green light simultaneously.
 * **Precision timing:** Using OCR0 = 125 with a prescaler to generate accurate 1ms interrupts for counting down light durations.
 * **Active pedestrian signaling:** Features dedicated interrupt service routines for **Timer 1** and **Timer 2** to create blinking effects for pedestrian crossing.
-* **Binary Port Mapping:** Controls multiple LEDs bansk by writing directly to registers:
+* **Binary Port Mapping:** Controls multiple LEDs banks by writing directly to registers:
 * * **PORTB:** Secondary signals and lane indicators/
   * **PORTC & PORTD:** Primary intersection traffic lights.
   * **PORTAL** Pedestrian indicator lights with toggle logic.
